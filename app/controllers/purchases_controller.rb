@@ -19,14 +19,6 @@ class PurchasesController < ApplicationController
     @attributes << @categories
   end
 
-  # GET /purchases/1/edit
-  def edit
-    @attributes = []
-    @attributes << @purchase
-    @categories = current_user.categories
-    @attributes << @categories
-  end
-
   # POST /purchases or /purchases.json
   def create
     @attributes = []
