@@ -14,7 +14,7 @@
  *= require_self
  */
 
- @font-face {
+@font-face {
   font-family: 'Proxima Nova';
   src: url('/assets/Proxima Nova Font.otf') format('opentype');
   font-weight: normal;
@@ -46,24 +46,24 @@ body {
 .blue-nav-white-text {
   background-color: #3778c2;
   color: #fff;
- }
+}
 
- .orange-btn {
+.orange-btn {
   background-color: #d07438;
   color: #fff;
 }
 
- .green-btn {
+.green-btn {
   background-color: #60b524;
   color: #fff;
- }
+}
 
- .blue-btn {
+.blue-btn {
   background-color: #3778c2;
   color: #fff;
- }
+}
 
- .blue {
+.blue {
   color: #3778c2;
 }
 
@@ -71,9 +71,11 @@ body {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }
