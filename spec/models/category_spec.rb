@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Category, type: :model do
   let(:user) { User.create(name: 'John Doe', email: 'john.doe@example.com', password: 'password123') }
-  let(:category) { Category.new(name: 'Example Category', icon: 'https://example.com/icon.png', user: user) }
+  let(:category) { Category.new(name: 'Example Category', icon: 'https://example.com/icon.png', user:) }
 
   it 'validity' do
     expect(category).to be_valid

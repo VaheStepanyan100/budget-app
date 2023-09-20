@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature 'Category Index Page', type: :feature, js: true do
-  include Devise::Test::IntegrationHelpers 
+  include Devise::Test::IntegrationHelpers
 
   let!(:user) { User.create(email: 'test@example.com', password: 'password') }
   let!(:category1) { Category.create(name: 'Test1 Category', user: @user) }

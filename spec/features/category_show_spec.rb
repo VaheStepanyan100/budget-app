@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.feature 'Category Show Page', type: :feature do
   let!(:user) { User.create(name: 'John Doe', email: 'john@example.com', password: 'password') }
-  let(:category) { Category.create(name: 'Test Category', icon: 'backarrow.png', user: user) }
-  let(:purchase) { Purchase.new(name: 'Test Purchase', amount: 100, author: user ) }
+  let(:category) { Category.create(name: 'Test Category', icon: 'backarrow.png', user:) }
+  let(:purchase) { Purchase.new(name: 'Test Purchase', amount: 100, author: user) }
 
   before do
     purchase.categories << category

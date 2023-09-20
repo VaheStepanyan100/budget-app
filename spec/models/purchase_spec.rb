@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Purchase, type: :model do
   let(:user) { User.create(email: 'user@example.com', password: 'password', name: 'John Doe') }
-  let(:category) { Category.create(name: 'Category', icon: 'icon', user: user) }
+  let(:category) { Category.create(name: 'Category', icon: 'icon', user:) }
   let(:purchase) { Purchase.new(name: 'Purchase Name', amount: 100, author: user) }
 
   it 'is valid' do

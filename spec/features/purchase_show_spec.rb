@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 RSpec.feature 'purchases/show', type: :feature do
-  include Devise::Test::IntegrationHelpers 
+  include Devise::Test::IntegrationHelpers
 
   let!(:user) { User.create(name: 'Test User', email: 'test@example.com', password: 'password') }
-  let(:category) { Category.create(name: 'Test Category', icon: 'backarrow.png', user: user) }
+  let(:category) { Category.create(name: 'Test Category', icon: 'backarrow.png', user:) }
   let(:purchase) { Purchase.new(name: 'Test Purchase', amount: 100) }
 
   before(:each) do

@@ -4,7 +4,7 @@ RSpec.describe '/purchases', type: :request do
   include Devise::Test::IntegrationHelpers # Include Devise test helpers
 
   let(:user) { User.create(name: 'John Doe', email: 'john.doe@example.com', password: 'password') }
-  let(:category) { Category.create(name: 'Some Category', icon: 'backarrow.png', user: user) }
+  let(:category) { Category.create(name: 'Some Category', icon: 'backarrow.png', user:) }
   let(:purchase) { Purchase.create(name: 'Some Purchase', amount: 100, author: user, categories: [category]) }
 
   before(:each) do
