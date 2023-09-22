@@ -67,7 +67,14 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+gem 'devise'
+
+gem 'tailwindcss-rails', '~> 2.0'
+
+gem 'rails-controller-testing'
