@@ -18,10 +18,10 @@ class PurchasesController < ApplicationController
     @categories = current_user.categories
     @attributes << @categories
 
-    if params[:category_id].present?
-      category = Category.find(params[:category_id])
-      @purchase.categories << category
-    end
+    return unless params[:category_id].present?
+
+    category = Category.find(params[:category_id])
+    @purchase.categories << category
   end
 
   # POST /purchases or /purchases.json
