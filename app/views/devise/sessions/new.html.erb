@@ -13,7 +13,7 @@
   </ul>
 </div>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'mt-10 flex flex-col' }) do |f| %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'mt-10 flex flex-col', id: 'signupForm' }) do |f| %>
   <div class="field border-t-2">
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'w-full border-none', placeholder: 'Email' %>
   </div>
@@ -26,3 +26,9 @@
 <div class="ms-4">
   <%= render "devise/shared/links" %>
 </div>
+
+<script>
+  document.getElementById('nextButton').addEventListener('click', function() {
+    document.getElementById('signupForm').submit();
+  });
+</script>
